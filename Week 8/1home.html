@@ -1,0 +1,86 @@
+<!--
+Style the website you made last week using CSS with the following requirements:
+Use only external CSS file (no internal or inline styling)
+
+Every element must be styled.
+
+Create style rules using class, id, and element selectors.
+-->
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JG | Real Estate Photography</title> <!--tittle element-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!--3 anchor elements to create navigation links-->
+    <header class="header">
+        <h1 class="logo"><a href="" ><img src="logo.png" width="300" class="header__img" alt="JG Real Estate Photography Logo"></a></h1>
+        <nav class="header-nav">
+            <ul class="header__ul">
+                <li><a href="1home.html" class="header__a">Home</a></li>
+                <li><a href="2services.html" class="header__a">Our Services</a></li>
+                <li><a href="3orderNow.html" class="header__a">Order Now</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <!--Images - First page-->
+    <div class="img-page1">
+    <img height="500px" src="Living Room - Dining.jpg" alt="Living room empty">
+
+    <img height="500px" src="Living Room - Dining_final.jpg" alt="Living room edited"> <br><br><br>
+    </div>
+
+    <!--Unordered list-->
+    <div class="ul-list">
+    <ul> 
+        <li class="ul-list-item">📸 Photos back within 24 - 48 hs</li>
+        <li class="ul-list-item">⌚ 24hs customer service</li>
+        <li class="ul-list-item">😃 Amazing quality and unbeatable price</li>
+    </ul><br>
+    </div>
+
+    <h4 class="three-steps">It only takes 3 steps!</h4>
+
+    <!--Ordered list-->
+    <ol class="ol">
+        <div class="box">
+            <li class="ol-list-item">Choose Furniture Type</li>
+            <img class="furnitureOne" src="ModernLivingRoom.png" width="270px" alt="Modern Furniture example.">
+        </div>
+
+        <div class="box">
+            <li class="ol-list-item">Upload Your Photos</li>
+            <img class="uploading" src="uploadingphotos.png" width="300px" alt="Upload your photos.">
+        </div>
+
+        <div class="box">
+            <li class="ol-list-item">Payment fast and easy!</li>
+            <img class="uploading" src="Yellow Simple Payment Instagram Post.png" width="300px" alt="Upload your photos.">
+        </div>
+    </ol><br>
+
+
+
+    <p class="vs">Virtual Staging as low as $17</h2><br><br>
+
+    <!--Footer with social media links and copyright-->
+    <footer class="footer">
+    <div class="footer-col"> <br>
+        <h4>Follow us</h4>
+        <div class="social-links">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <p id="footer-copyright">Copyright © 2023 Jessica German</p><br>
+    </footer>
+</body>
+</html>

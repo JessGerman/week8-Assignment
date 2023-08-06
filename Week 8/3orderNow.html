@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JG | Real Estate Photography</title> <!--tittle element-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+</head>
+<body>
+    <!--3 anchor elements to create navigation links-->
+    <header class="header">
+        <h1 class="logo"><a href="" ><img src="logo.png" width="300" class="header__img" alt="JG Real Estate Photography Logo"></a></h1>
+        <nav class="header-nav">
+            <ul class="header__ul">
+                <li><a href="1home.html" class="header__a">Home</a></li>
+                <li><a href="2services.html" class="header__a">Our Services</a></li>
+                <li><a href="3orderNow.html" class="header__a">Order Now</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <!--main header aligned to the center of the page-->
+    <div>
+    <h1 class="title">Order Now</h1>
+    </div>
+    <!--main header element is centered-->
+    <h1 class="allTitles">Virtual Staging Order</h1><br><br>
+
+    <h2>Step 1</h2>
+    <h3>Project Name / Property Address</h3> 
+    <!--allows user to enter the project name with a placeholder-->
+    <input class="proj-name" type="text" name="projectName" placeholder="Project Name" required="required"><br>
+
+    <h2>Step 2</h2>
+    <p>Furniture Options</p> <!--paragraph-->
+    
+    <div> <!--let users choose-->
+        <input type="radio" name="choose" value="letUsChoose" /> Let Us Choose <br>
+        <input type="radio" name="choose" value="youChoose" /> Choose Furniture Yourself
+    </div> <br>
+
+    <select name="youChoose"> <!--user chooses the type of furniture-->
+        <option value="modern">Modern</option>
+        <option value="contemporary">Contemporary</option>
+        <option value="urbanIndustrial">Urban / Industrial</option>
+        <option value="Farmhouse">Farmhouse</option>
+        <option value="virtualRenovation">Virtual Renovation</option>
+    </select>
+
+    <h2>Step 3</h2>
+    <p>Files for Staging</p>
+    
+    <div> <!--user chooses if they want to upload their photos or provide a link-->
+        <input type="radio" name="photos" value="uploadPhotos" /> Upload Photos (1 - 10) <br>
+        <input type="radio" name="photos" value="downloadLink"> Download Link (10+) | Share the link in the comments
+    </div> <br>
+
+    <form class="form-order"> <!--contains all the form fields related to upload photos and additional services-->
+        <fieldset> <!--group related form elements together-->
+            <legend><h4>Upload Photos</h4></legend>
+                <div>
+                <label for="avatar"> Upload your photo(s):  </label>
+                <input type="file" id="avatar" name="avatar" required /> <!--allows users to upload photo(s)-->
+                </div>
+
+                <h4>Room Type:</h4>
+                <select name="roomType"> <!--allows users to select from a dropdown menu-->
+                    <option value="select">Select</option>
+                    <option value="livingRoom">Living Room (LR)</option>
+                    <option value="diningRoom">Dining Room (DR)</option>
+                    <option value="livingNd">LR + DR</option>
+                    <option value="plusKitchen">LR + DR + Kitchen</option>
+                    <option value="kitchen">Kitchen</option>
+                    <option value="primarybed">Primary Bedroom</option>
+                    <option value="secbed">Secondary Bedroom</option>
+                    <option value="kids">Kids room</option>
+                    <option value="bathroom">Bathroom</option>
+                    <option value="office">Office</option>
+                    <option value="gym">Gym</option>
+                    <option value="gameroom">Game Room</option>
+                    <option value="mediaroom">Media Room</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <h4>Additional Services:</h4>
+                    <div> <!--checkboxes to users choose in case of an additional services-->
+                        <input type="checkbox" name="services" value="rush" /> Rush Delivery (12 - 24hs) $4<br>
+                        <input type="checkbox" name="services" value="itemRemoval" /> Item Removal $8<br>
+                        <input type="checkbox" name="services" value="floor"/> Change Flooring Type $8<br>
+                        <input type="checkbox" name="services" value="wallTexture" /> Change Wall Texture $8 <br>
+                        <input type="checkbox" name="services" value="wallColor"/> Change Wall Color $8<br>
+                        <input type="checkbox" name="services" value="renovation"/> Virtual Renovation $12<br>
+                    </div><br>
+                    <!--provides a space for users to add instructions or notes-->
+                    <textarea id="story" name="story" rows="5" cols="34" placeholder="TV on the wall. https://drive.google.com/folder/VS"></textarea>
+                </fieldset><br>
+
+                <button class="btn">Submit</button>
+    </form><br>
+    <!--Footer with social media links and copyright--> 
+    <footer class="footer">
+        <div class="footer-col"> <br>
+            <h4>Follow us</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <p id="footer-copyright">Copyright © 2023 Jessica German</p><br>
+        </footer>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto:wght@100&display=swap");
+
+* {
+    font-family: "poppins" ,sans-serif;
+}
+
+/* ---------------- LOGO AND NAVBAR -----------------*/
+body { /*applies to the whole doc (html body)*/
+    align-items: center;
+    max-width: 32;
+    min-height: 16;
+    margin: 0;
+    margin-right: 1px;
+}
+
+.header { /*header position content*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding-block: 1rem;
+    padding-inline: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.header__logo { /*logo margin*/
+    margin: 0;
+}
+
+.header__img { /*img display*/
+    display: block;
+    align-items: center;
+}
+
+.header__ul { /*code styles an unordered list that removes the bullet points */
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-block-end: 0;
+}
+
+.header__a { /*header position*/
+    color: rgb(248, 140, 156);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.header__a:hover { /*when hover on navbar*/
+    color: hsla(0, 0%, 100%, 0.9);
+    background: hsla(350, 89%, 74%, 0.7);
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px) { /*add style to elements with the class header*/
+    .header {
+        flex-direction: column;
+    }
+}
+
+
+h1 { /*all h1*/
+    text-align: center;
+}
+
+/*Logo all pages*/
+.logo { 
+    padding: 10px;
+    margin: 1rem 2rem;
+    justify-content: left;
+    width: 100px;
+    height: 100px;
+}
+
+.nav-bar { /*navigation bar style*/
+    margin: 1rem 2rem;
+    display: flex;
+    color: rgb(145, 143, 143);
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* -------------- IMAGES -------------- */
+
+.img-page1 { /*Image home page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.img-page2 { /*Image 1 - Services page */
+    width: 100vw;
+}
+
+.img2-page2 { /*Image 2 - Services page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+/* ------------------------------------ */
+
+
+/* Virtual Renovation - centered */
+.vr {
+    text-align: center;
+    color: hsla(350, 89%, 74%, 0.7);
+}
+
+#checkout-button { /*submit buttons (services & order now pages)*/
+    color: hsla(0, 0%, 100%, 0.9);
+    background: hsla(350, 89%, 74%, 0.7);
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+}
+
+.form-oder {
+    width: 80%;
+    margin: auto;
+}
+
+.ul-list { /*unordered list*/
+    font-size: large;
+}
+
+.ul-list-item { /*unordered list items*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 2;
+    color: rgb(103, 101, 101);
+}
+
+.three-steps { /*title of 3 steps*/
+    font-size: x-large;
+    color: rgb(103, 101, 101);
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.ol-list-item { /*ordered list*/
+    display: flex;
+    line-height: 2;
+    color: rgb(103, 101, 101);
+}
+
+.furnitureOne { /*first box - image*/
+    margin-top: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+.uploading { /*second box - image*/
+    margin-top: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+.vs { /*title*/
+    font-size: xxx-large;
+    font-weight: bold;
+    text-align: center;
+    color: hsla(350, 89%, 74%, 0.7);
+}
+
+.iBline { /*contact us boxes -services page*/
+    border-radius: 4px;
+    border-color: hsla(350, 89%, 74%, 0.7);
+    border-width: 3px;
+    height: 30px;
+    width: 215px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.iBline-text { /*contact us big box - message/ services page*/
+    border-radius: 4px;
+    border-color: hsla(350, 89%, 74%, 0.7) solid;
+    border-width: 3px;
+    height: 250px;
+    width: 450px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.footer { /*footer all pages*/
+    background-color: rgb(180, 238, 244);
+    
+}
+
+#footer-copyright { /*footer all pages*/
+    font-style: italic;
+    text-align: center;
+    font-size: small;
+}
+
+.footer .social-links a{ /*footer all pages - social media links*/
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(247, 144, 144, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #f23151;
+    transition: all 0.5s ease;
+}
+
+.footer .social-links a:hover { /*footer all pages - hover*/
+    color: #31aef2;
+    background-color: #ffffff;
+}
+
+.btn { /*buttons on services and order now pages*/
+    border-radius: 5px;
+    background-color: hsla(350, 89%, 74%, 0.7);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    width: 90px;
+    height: 30px;
+    border-color: #f23151;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.btn:hover { /*buttons on services and order now pages*/
+    cursor: pointer;
+}
+
+.title { /*title color on services and order now pages*/
+    color: rgb(116, 223, 235);
+}
+
+.allTitles { /*second title color on services and order now pages*/
+    color: hsla(350, 89%, 74%, 0.7);
+}
+
+.diffTitle { /*contact us title*/
+    text-align: left;
+    color: hsla(350, 89%, 74%, 0.7);
+}
+
+.ol { /*ordered list content - home page*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    width: 87vw;
+}
+
+.box { /*ordered list content - box home page*/
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    border: 3px;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 6px 10px rgb(113, 112, 112);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.box h3 { /*ordered list content - box home page*/
+    color: #444;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+.box p { /*ordered list content - box home page*/
+    color: #444;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.box :hover { /*ordered list content - box hover - home page*/
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px hsla(350, 89%, 74%, 0.7);
+}
+
+/*3rd page: Project name*/
+.proj-name {
+    padding: 8px 12px;
+    color: #05a3bbce;
+    font-size: medium;
+    font-weight: bold ;
+    background-color: #f6f8f8ee;
+    border: 1px solid hsla(350, 89%, 74%, 0.7);
+    border-radius: 5px;
+}
+
+#story { /*contact us & comment area*/
+    border-radius: 4px;
+    border-color: hsla(350, 89%, 74%, 0.7);
+    border-width: 3px;
+    height: 150px;
+    width: 450px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
